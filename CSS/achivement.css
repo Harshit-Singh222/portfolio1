@@ -1,0 +1,319 @@
+*{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+body::before{
+    content: "";
+    background: url('../img/background.png') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+.navbar{
+    background-color: white;
+    box-shadow:2px 3px 4px 1px #f1f1f1;
+    display: flex;
+    height: 50px;
+}
+.navbar p{
+    font-family: 'Orbitron', sans-serif;
+    margin: 10px 0px 0px 13px;
+    font-size: 24px;
+    transition: all 0.5s ease-in-out 50ms;
+}
+.navbar p:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.navbar ul{
+    display: flex;
+    position: relative; 
+    margin: 0px auto;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0px 25px;
+    padding: 15px 10px;
+    transition: all 300ms ease-in-out 50ms;
+}
+.navbar ul li:hover{
+    background-color: black;
+    border-radius: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 147x;
+    padding: 0px 10px;
+    color: rgb(83, 83, 83);
+    font-weight: bold;
+}
+.navbar ul li a:hover{
+    color: whitesmoke;
+}
+#content{
+    border: 3px solid #f1f1f15e;
+    margin: auto;
+    width: 1300px;
+    height: 700px;
+    border-radius: 20px;
+    position: relative;
+    top: 60px;
+    box-shadow:-3px -5px #f1f1f15e;
+    background-color: whitesmoke;
+}
+.row1{
+    display: flex;
+    margin:20px 200px;
+    flex-wrap: wrap;
+}
+.row2{
+    display: flex;
+    margin:20px 170px;
+    flex-wrap: wrap;
+}
+#imo{
+    width: 300px;
+    margin: 20px;
+}
+.row1 .imgbox img{
+    transition: transform 2s;
+}
+.row1 #text-imo{
+    position: absolute;
+    top: 70px;
+    left: 250px;
+    background-color: rgba(0, 0, 0, 0.507);
+    width: 220px;
+    height: 200px;
+    color: white;
+
+    transform: scaleY(0);
+    transition: transform 0.5s;
+}
+.row1 .imgbox:hover #text-imo{
+    transform: scaleY(1);
+}
+#text-imo h2{
+    margin: 10px;
+    margin-top: 30px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+}
+#text-imo p{
+    margin: 10px;
+    margin-top: -20px;
+    padding: 20px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+#cricket{
+    width: 370px;
+    margin: 20px;
+    margin-left: 170px;
+}
+.row1 .imgbox img{
+    transition: transform 2s;
+}
+.row1 #text-cricket{
+    position: absolute;
+    top: 70px;
+    right: 270px;
+    background-color: rgba(0, 0, 0, 0.507);
+    width: 280px;
+    height: 200px;
+    color: white;
+
+    transform: scaleY(0);
+    transition: transform 0.5s;
+}
+.row1 .imgbox:hover #text-cricket{
+    transform: scaleY(1);
+}
+#text-cricket h2{
+    margin: 10px;
+    margin-top: 30px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+}
+#text-cricket p{
+    margin: 10px;
+    margin-top: -20px;
+    padding: 20px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+#volleyball{
+    width: 365px;
+    margin: 20px;
+}
+.row2 .imgbox img{
+    transition: transform 2s;
+}
+.row2 #text-volleyball{
+    position: absolute;
+    bottom: 70px;
+    left: 230px;
+    background-color: rgba(0, 0, 0, 0.507);
+    width: 280px;
+    height: 200px;
+    color: white;
+
+    transform: scaleY(0);
+    transition: transform 0.5s;
+}
+.row2 .imgbox:hover #text-volleyball{
+    transform: scaleY(1);
+}
+#text-volleyball h2{
+    margin: 10px;
+    margin-top: 30px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+}
+#text-volleyball p{
+    margin: 10px;
+    margin-top: -20px;
+    padding: 20px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+#badminton{
+    width: 360px;
+    margin: 20px;
+    margin-left: 150px;
+}
+.row2 .imgbox img{
+    transition: transform 2s;
+}
+.row2 #text-badminton{
+    position: absolute;
+    bottom: 70px;
+    right: 255px;
+    background-color: rgba(0, 0, 0, 0.507);
+    width: 280px;
+    height: 200px;
+    color: white;
+
+    transform: scaleY(0);
+    transition: transform 0.5s;
+}
+.row2 .imgbox:hover #text-badminton{
+    transform: scaleY(1);
+}
+#text-badminton h2{
+    margin: 10px;
+    margin-top: 30px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+}
+#text-badminton p{
+    margin: 10px;
+    margin-top: -20px;
+    padding: 20px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+.media{
+    margin-top: -2px;
+}
+.social{
+    position: fixed;
+    top: 200px;
+    right: 0px;
+}
+#facebook{
+    border: 1px solid rgba(255, 255, 255, 0.329);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.692);
+    transition: all 250ms ease-in-out 50ms;
+}
+#facebook:hover{
+    filter: invert(1);
+    cursor: pointer;
+}
+#twitter{
+    border: 1px solid rgba(255, 255, 255, 0.329);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.692);
+    transition: all 250ms ease-in-out 50ms;
+}
+#twitter:hover{
+    filter: invert(1);
+    cursor: pointer;
+}
+#insta{
+    border: 1px solid rgba(255, 255, 255, 0.329);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.692);
+    transition: all 250ms ease-in-out 50ms;
+}
+#insta:hover{
+    filter: invert(1);
+    cursor: pointer;
+}
+#youtube{
+    border: 1px solid rgba(255, 255, 255, 0.329);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.692);
+    transition: all 250ms ease-in-out 50ms;
+}
+#youtube:hover{
+    filter: invert(1);
+    cursor: pointer;
+}
+@media only screen and (max-width:1300px) {
+    body::before{
+        content: "";
+        background: url('../img/background.png') no-repeat center center/cover;
+        height: 100%;
+        width: 1300px;
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+    }
+    .navbar{
+        background-color: white;
+        box-shadow:2px 3px 4px 1px #f1f1f1;
+        display: flex;
+        height: 50px;
+        width: 1300px;
+    }
+}
+@media only screen and (min-width:800px) and (max-width:1000px) {
+    .navbar ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        padding: 0px 10px;
+        color: rgb(83, 83, 83);
+        font-weight: bold;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:800px) {
+    
+    .navbar ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        padding: 0px 10px;
+        color: rgb(83, 83, 83);
+        font-weight: bold;
+    }
+}
+@media only screen and (max-width:600px) {
+    .navbar ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        padding: 0px 10px;
+        color: rgb(83, 83, 83);
+        font-weight: bold;
+    }
+}
+

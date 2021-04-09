@@ -1,0 +1,298 @@
+*{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+body::before{
+    content: "";
+    background: url('../img/background.png') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+.navbar{
+    background-color: white;
+    box-shadow:2px 3px 4px 1px #f1f1f1;
+    display: flex;
+    height: 50px;
+}
+.navbar p{
+    font-family: 'Orbitron', sans-serif;
+    margin: 10px 0px 0px 13px;
+    font-size: 24px;
+    transition: all 0.5s ease-in-out 50ms;
+}
+.navbar p:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.navbar ul{
+    display: flex;
+    position: relative; 
+    margin: 0px auto;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0px 25px;
+    padding: 15px 10px;
+    transition: all 300ms ease-in-out 50ms;
+}
+.navbar ul li:hover{
+    background-color: black;
+    border-radius: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 147x;
+    padding: 0px 10px;
+    color: rgb(83, 83, 83);
+    font-weight: bold;
+}
+.navbar ul li a:hover{
+    color: whitesmoke;
+}
+#content{
+    border: 3px solid #f1f1f15e;
+    margin: auto;
+    width: 1300px;
+    height: 600px;
+    border-radius: 20px;
+    position: relative;
+    top: 60px;
+    box-shadow:-3px -5px #f1f1f15e;
+    background-color: whitesmoke;
+    justify-content: center;
+}
+#content h1{
+    text-align: center;
+    margin: 17px;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 3rem;
+}
+#content p{
+    margin: 17px 163px;
+    padding: 10px;
+    font-size: 1.11rem;
+}
+.media{
+    margin-top: -2px;
+}
+.social{
+    position: fixed;
+    top: 200px;
+    right: 0px;
+}
+#facebook{
+    border: 1px solid rgba(255, 255, 255, 0.329);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.692);
+    transition: all 250ms ease-in-out 50ms;
+}
+#facebook:hover{
+    filter: invert(1);
+    cursor: pointer;
+}
+#twitter{
+    border: 1px solid rgba(255, 255, 255, 0.329);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.692);
+    transition: all 250ms ease-in-out 50ms;
+}
+#twitter:hover{
+    filter: invert(1);
+    cursor: pointer;
+}
+#insta{
+    border: 1px solid rgba(255, 255, 255, 0.329);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.692);
+    transition: all 250ms ease-in-out 50ms;
+}
+#insta:hover{
+    filter: invert(1);
+    cursor: pointer;
+}
+#youtube{
+    border: 1px solid rgba(255, 255, 255, 0.329);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.692);
+    transition: all 250ms ease-in-out 50ms;
+}
+#youtube:hover{
+    filter: invert(1);
+    cursor: pointer;
+}
+@media only screen and (max-width:800px) {
+    #content{
+        border: 3px solid #f1f1f15e;
+        margin: auto;
+        width: 700px;
+        height: 600px;
+        border-radius: 20px;
+        position: relative;
+        top: 60px;
+        box-shadow:-3px -5px #f1f1f15e;
+        background-color: whitesmoke;
+    }
+}
+@media only screen and (max-width:1300px) {
+    body::before{
+        content: "";
+        background: url('../img/background.png') no-repeat center center/cover;
+        height: 100%;
+        width: 1300px;
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+    }
+    #content{
+        border: 3px solid #f1f1f15e;
+        margin: 10px 50px 50px 200px ;
+        width: 800px;
+        height: 500px;
+        border-radius: 20px;
+        position: relative;
+        top: 60px;
+        box-shadow:-3px -5px #f1f1f15e;
+        background-color: whitesmoke;
+        box-sizing: border-box;
+    }
+    .navbar{
+        background-color: white;
+        box-shadow:2px 3px 4px 1px #f1f1f1;
+        display: flex;
+        height: 50px;
+        width: 1300px;
+    }
+}
+@media only screen and (min-width:800px) and (max-width:1000px) {
+    body::before{
+        content: "";
+        background: url('../img/background.png') no-repeat center center/cover;
+        height: 1000px;
+        width: 1300px;
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+    }
+    #content{
+        border: 3px solid #f1f1f15e;
+        margin: 10px 50px 50px 250px ;
+        width: 800px;
+        height: 800px;
+        border-radius: 20px;
+        position: relative;
+        top: 60px;
+        box-shadow:-3px -5px #f1f1f15e;
+        background-color: whitesmoke;
+        box-sizing: border-box;
+    }
+    #content h1{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 3.3rem;
+    }
+    #content p{
+       padding: 30px 90px 0px 90px;
+       text-align: justify;
+       font-size: 1.3rem;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        padding: 0px 10px;
+        color: rgb(83, 83, 83);
+        font-weight: bold;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:800px) {
+    body::before{
+        content: "";
+        background: url('../img/background.png') no-repeat center center/cover;
+        height: 1200px;
+        width: 1300px;
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+    }
+    #content{
+        border: 3px solid #f1f1f15e;
+        margin: 75px 50px 50px 250px ;
+        width: 800px;
+        height: 800px;
+        border-radius: 20px;
+        position: relative;
+        top: 60px;
+        box-shadow:-3px -5px #f1f1f15e;
+        background-color: whitesmoke;
+        box-sizing: border-box;
+    }
+    #content h1{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 3.6rem;
+    }
+    #content p{
+       padding: 30px 70px 0px 70px;
+       text-align: justify;
+       font-size: 1.6rem;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        padding: 0px 10px;
+        color: rgb(83, 83, 83);
+        font-weight: bold;
+    }
+}
+@media only screen and (max-width:600px) {
+    body::before{
+        content: "";
+        background: url('../img/background.png') no-repeat center center/cover;
+        height: 1200px;
+        width: 1300px;
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+    }
+    #content{
+        border: 3px solid #f1f1f15e;
+        margin: 75px 50px 50px 250px ;
+        width: 800px;
+        height: 800px;
+        border-radius: 20px;
+        position: relative;
+        top: 60px;
+        box-shadow:-3px -5px #f1f1f15e;
+        background-color: whitesmoke;
+        box-sizing: border-box;
+    }
+    #content h1{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 3.8rem;
+    }
+    #content p{
+       padding: 30px 50px 0px 50px;
+       text-align: justify;
+       font-size: 1.8rem;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        padding: 0px 10px;
+        color: rgb(83, 83, 83);
+        font-weight: bold;
+    }
+}
